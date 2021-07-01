@@ -1,0 +1,20 @@
+﻿<Window x:Class="Smokeball.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Smokeball"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Border Visibility="Visible" BorderThickness="2" BorderBrush="Blue" CornerRadius="8" Margin="30,30,30,30">
+        <StackPanel Margin="3">
+            <Label  Height="35" Content="Smokeball Position in google results" Background="LightSkyBlue" />
+            <Separator Height="5"/>
+            <Label  Height="35" Content="Smokeball Position in google results" Name="ErrorMessage" Visibility="Collapsed"/>
+          
+                <Label  Height="35" Content="Smokeball was found in the following positions" Name="LabelResult" Visibility="Collapsed"/>
+                <Label  Height="35" Name="Result" Visibility="Collapsed"/>
+           
+        </StackPanel>
+    </Border>
+</Window>
